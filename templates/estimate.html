@@ -3,4 +3,26 @@
 {% block title %} Create an Estimate {% endblock %}
 
 
-{% block body %} Estimate Below: {% endblock %}
+{% block body %}
+
+<h3>Vertical Tank Maintenance Estimator</h3>
+<form action="/estimate" method="POST">
+  <label for="radius">Radius of Tank:</label>
+  <input type="number" id="radius" name="radius" autofocus required />
+  <br />
+  <label for="height">Height of Tank:</label>
+  <input type="number" id="height" name="height" />
+  <br />
+  <input type="submit" id="submit" name="submit" />
+  <label for ="submit"> (Calculate)</label>
+  <br /><br />
+  <input type="reset" value="Clear" />
+</form>
+<br />
+<br />
+
+{% if estimate %}
+The final estimate for the tank is {{estimate}}.
+
+{% endif %}
+{% endblock %}
