@@ -1,5 +1,3 @@
-import app
-
 def test_index_route(app, client):
     """
     GIVEN a Flask application configured for testing
