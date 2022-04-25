@@ -1,4 +1,5 @@
 import pytest
+import app
 from app import app as vtm_site
 
 @pytest.fixture()
