@@ -38,7 +38,7 @@ def test_estimate_vtm_calculation(app, client):
     THEN the final cost is estimated
     '''
     with app.test_client() as test_client:
-        calculate = {"radius":"180", "height":"360"}
+        estimate = {"radius":"180", "height":"360"}
         res = test_client.post("/estimate", data=estimate)
         assert res.status_code == 200 
         assert b"141,300.00" in res.data 
