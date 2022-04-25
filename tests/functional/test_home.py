@@ -7,7 +7,7 @@ def test_index_route(app, client):
     with app.test_client() as test_client:
         res = test_client.get('/')
         assert res.status_code == 200
-        assert b"Vertical Tank Maintenance" in res.
+        assert b"Vertical Tank Maintenance" in res.data
 
 def test_about_route(app, client):
     """
@@ -18,7 +18,7 @@ def test_about_route(app, client):
     with app.test_client() as test_client:
         res = test_client.get('/about')
         assert res.status_code == 200
-        assert b"About Vertical Tank Maintenance" in res.
+        assert b"About Vertical Tank Maintenance" in res.data
 
 def test_estimate_route(app, client):
     """
@@ -29,7 +29,7 @@ def test_estimate_route(app, client):
     with app.test_client() as test_client:
         res = test_client.get('/estimate')
         assert res.status_code == 200
-        assert b"Vertical Tank Maintenance Estimator" in res.
+        assert b"Vertical Tank Maintenance Estimator" in res.data
 
 def test_estimate_vtm_calculation(app, client):
     '''
