@@ -2,7 +2,7 @@ import pytest
 from app import app as vtm_site
 
 @pytest.fixture()
-def(app):
+def app():
     yield vtm_site
 
 @pytest.fixture
