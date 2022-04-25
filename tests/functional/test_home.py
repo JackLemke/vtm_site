@@ -41,5 +41,5 @@ def test_estimate_vtm_calculation(app, client):
         estimate = {"radius":"180", "height":"360"}
         res = test_client.post("/estimate", data=estimate)
         assert res.status_code == 200 
-        assert b"$141,300.00" in res.data 
+        assert b"$254,340.00." in res.data 
 

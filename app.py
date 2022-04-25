@@ -20,7 +20,7 @@ def estimate():
         height = float(form['height'])
         pi = 3.14
         top_tank = pi * radius**2
-        side_tank = 2 * (pi * (radius*height)) 
+        side_tank = 2 * (pi * (radius*height)) *2
         area_tank = top_tank + side_tank
         sqft = area_tank / 144
         cost_material = 25 * sqft
