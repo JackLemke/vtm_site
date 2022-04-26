@@ -66,9 +66,9 @@ jobs:
             ./BUILD
   deploy:
     runs-on: ubuntu-latest
-    needs: package
+    needs: build
     environment:
-      name: "Production"
+      name: 'Production'
       url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
 
     steps:
@@ -77,11 +77,11 @@ jobs:
         with:
           name: python-app
           path: .
-
-      - name: "Deploy to Azure Web App"
+          
+      - name: 'Deploy to Azure Web App'
         uses: azure/webapps-deploy@v2
         id: deploy-to-webapp
         with:
-          app-name: "vtm_site" # may need to edit for web app name
-          slot-name: "Production"
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_E16734155BF04163B6C12E269CBA9F2E }}
+          app-name: 'VTMPIPELINE'
+          slot-name: 'Production'
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_6C9CED6F5A5D432FA326F29658BDF823 }}
