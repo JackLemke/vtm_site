@@ -1,36 +1,47 @@
 # Flask 
-![MicrosoftAzure](https://img.shields.io/badge/-Azure-blue?logo=microsoftazure)
-![Flask](https://img.shields.io/badge/-Flask-black?logo=flask)
+### Flask Website
 
-Basic structure for starting a Flask project with Jinja templates
 
----
-1. Clone this repository to local computer
+I created a flask website regarding vertical tank maintenance.
 
-2. Rename the directory to reflect the new project name
 
-3. Delete .git folder
+## Table of Contents
 
-4. Create a new virtual environment 
-    - Windows:  ```python -m venv ./venv```
-    - Mac:  ```python3 -m venv ./venv```
 
-5. Activate the new virtual environment
-   - Windows:  ```.\venv\Scripts\activate```
-   - Mac:  ```source ./venv/bin/activate```
+- General Information
 
-6. Install the dependencies ```pip install -r requirements.txt```
 
-7. Make a new repository by running ```git init``` in the folder.
+- Technologies Used
 
-8. Track all the files in the new local repository ```git add .```
 
-9. Make the first commit of this new project ```git commit -m 'first commit of <project name> from flask_template```
+- Project Status
 
-10. On Github, create a new repository. *DO NOT* initialize it
 
-11. Connect the local repository to the new Github repository ```git remote add origin <<repository_URL>>```
+- Contact
 
-12. Create and change to a new local development branch ```git checkout b development```
 
-13. Continue working with the project as you normally would.
+## General Information
+
+
+For this project, we were to create and design a portfolio flask website. I used html and python languages to build and code the website. We used calculations and I designed using a CSS stylesheet and included images of the maintenance. The site includes a home or index page, an about page, and an interactive estimator page that can be used to estimate the cost of tank maintenance by inputting a radius and height of a tank. 
+
+
+## Technologies Used
+
+
+- Github Desktop
+
+
+- Visual Studio Code
+
+
+## Project Status
+
+
+This project is complete and can be found at https://vtmpython.azurewebsites.net 
+
+
+## Contact
+
+
+- Email: jackalemke@gmail.com
